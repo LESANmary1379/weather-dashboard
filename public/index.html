@@ -1,0 +1,69 @@
+# Weather Dashboard
+
+A responsive weather dashboard that fetches live data from the OpenWeatherMap API and displays current conditions and a 5-day forecast.
+
+## Features
+
+- City search and geolocation support
+- Current temperature, humidity, wind, pressure, and visibility
+- 5-day forecast cards
+- Modern responsive design
+- Backend API proxy to keep the API key secure
+
+## Tech Stack
+
+- Node.js
+- Express
+- OpenWeatherMap API
+- Vanilla JavaScript + CSS
+
+## Setup
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Create a `.env` file by copying `.env.example`:
+
+```bash
+cp .env.example .env
+```
+
+4. Add your OpenWeatherMap API key to `.env`:
+
+```env
+PORT=3000
+OPENWEATHER_API_KEY=your_api_key_here
+```
+
+5. Start the app:
+
+```bash
+npm start
+```
+
+6. Open `http://localhost:3000` in your browser.
+
+## Notes
+
+- You can get a free API key from: https://openweathermap.org/api
+- This app uses the public OpenWeatherMap API for data retrieval.
+
+## Project Structure
+
+```text
+weather-dashboard/
+├── public/
+│   ├── app.js
+│   ├── index.html
+│   └── styles.css
+├── .env.example
+├── .gitignore
+├── package.json
+├── README.md
+├── server.js
+└── package-lock.json (generated after install)
+```
